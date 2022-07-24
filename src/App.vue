@@ -30,7 +30,7 @@ import Hightlights from "./components/Hightlights.vue";
     </div>
   </div>
   <div class="loader" v-if="loading">
-    <img src="./assets/rings.svg" alt="loader" />
+    <img src="/images/rings.svg" alt="loader" />
   </div>
 </template>
 
@@ -43,29 +43,26 @@ export default {
       info: null,
       loading: false,
       metrics: "c",
-      weatherImg: "/src/assets/Clear.png",
+      weatherImg: "/images/Clear.png",
       forecastImg: [],
       conditions: {
-        "/src/assets/Clear.png": ["Clear", "Sunny"],
-        "/src/assets/LightCloud.png": [
+        "/images/Clear.png": ["Clear", "Sunny"],
+        "/images/LightCloud.png": [
           "Partly Sunny",
           "Mostly Sunny",
           "Partly cloudy",
         ],
-        "/src/assets/HeavyCloud.png": ["Overcast"],
-        "/src/assets/Shower.png": ["Showers", "Scattered Showers"],
-        "/src/assets/Sleet.png": ["Rain and Snow", "Snow Showers", "Sleet"],
-        "/src/assets/Snow.png": ["Light Snow", "Snow"],
-        "/src/assets/HeavyRain.png": ["Heavy rain"],
-        "/src/assets/LightRain.png": [
+        "/images/HeavyCloud.png": ["Overcast"],
+        "/images/Shower.png": ["Showers", "Scattered Showers"],
+        "/images/Sleet.png": ["Rain and Snow", "Snow Showers", "Sleet"],
+        "/images/Snow.png": ["Light Snow", "Snow"],
+        "/images/HeavyRain.png": ["Heavy rain"],
+        "/images/LightRain.png": [
           "Patchy rain possible",
           "Light rain",
           "Moderate rain",
         ],
-        "/src/assets/Thunderstorm.png": [
-          "Scattered Thunderstorms",
-          "Thunderstorm",
-        ],
+        "/images/Thunderstorm.png": ["Scattered Thunderstorms", "Thunderstorm"],
       },
     };
   },

@@ -22,13 +22,13 @@ defineProps({
       </button>
       <button class="location-btn">
         <img
-          src="../assets/my_location_black_24dp.svg"
+          src="/images/my_location_black_24dp.svg"
           alt="location"
           @click="location"
         />
       </button>
     </nav>
-    <img src="../assets/Cloud-background.png" alt="clouds" class="cloud-bg" />
+    <img src="/images/Cloud-background.png" alt="clouds" class="cloud-bg" />
     <img :src="img" alt="img" class="weather-img" />
     <h1 class="number">
       {{ Math.round(data.current["temp_" + metric])
