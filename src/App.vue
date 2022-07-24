@@ -102,7 +102,7 @@ export default {
     apiRequest(city = "medellin") {
       this.loading = true;
       fetch(
-        `http://api.weatherapi.com/v1/forecast.json?key=72e59c6f35184e1c99f223248221707&q=${city}&days=3&aqi=no&alerts=no`
+        `https://api.weatherapi.com/v1/forecast.json?key=72e59c6f35184e1c99f223248221707&q=${city}&days=3&aqi=no&alerts=no`
       )
         .then((response) => response.json())
         .then((json) => {
