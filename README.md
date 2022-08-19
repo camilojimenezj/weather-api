@@ -1,10 +1,20 @@
-# weather-api
+# Weather-app
 
-This template should help get you started developing with Vue 3 in Vite.
+This application is a prototype of a website that shows the weather forecast for any city in the world
 
-## Recommended IDE Setup
+```
+https://weather-api-ivory.vercel.app/
+```
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Screenshots
+
+![App Screenshot](https://github.com/camilojimenezj/weather-app/blob/master/preview2.jpg?raw=true)
+
+## Technologies used
+
+1. React
+2. Javascript
+3. CSS3
 
 ## Customize configuration
 
