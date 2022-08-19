@@ -1,9 +1,3 @@
-<script setup>
-import MainPage from "./components/MainPage.vue";
-import ForecastPage from "./components/ForecastPage.vue";
-import Hightlights from "./components/Hightlights.vue";
-</script>
-
 <template>
   <div class="container" v-if="info">
     <div class="metric">
@@ -35,9 +29,13 @@ import Hightlights from "./components/Hightlights.vue";
 </template>
 
 <script>
+import MainPage from "./components/MainPage.vue";
+import ForecastPage from "./components/ForecastPage.vue";
+import Hightlights from "./components/Hightlights.vue";
+
 export default {
   name: "Parent",
-  components: { MainPage },
+  components: { MainPage, ForecastPage, Hightlights },
   data() {
     return {
       info: null,

@@ -1,18 +1,3 @@
-<script setup>
-defineProps({
-  data: {
-    type: Object,
-    required: true,
-  },
-  images: {
-    type: Array,
-  },
-  metric: {
-    type: String,
-  },
-});
-</script>
-
 <template>
   <div class="container">
     <div v-for="(el, i) in data.forecast.forecastday" :key="el.id" class="box">
@@ -36,6 +21,18 @@ defineProps({
 
 <script>
 export default {
+  props: {
+    data: {
+      type: Object,
+      required: true,
+    },
+    images: {
+      type: Array,
+    },
+    metric: {
+      type: String,
+    },
+  },
   data() {
     return {
       dates: ["Today", "Tomorrow"],

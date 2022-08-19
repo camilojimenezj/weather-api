@@ -1,12 +1,3 @@
-<script setup>
-defineProps({
-  data: {
-    type: Object,
-    required: true,
-  },
-});
-</script>
-
 <template>
   <div class="container">
     <h1 class="title">Today's Hightlights</h1>
@@ -54,7 +45,14 @@ defineProps({
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    data: {
+      type: Object,
+      required: true,
+    },
+  },
+};
 </script>
 
 <style scoped>

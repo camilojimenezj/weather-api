@@ -1,19 +1,3 @@
-<script setup>
-defineProps({
-  data: {
-    type: Object,
-    required: true,
-  },
-  img: {
-    type: String,
-    required: true,
-  },
-  metric: {
-    type: String,
-  },
-});
-</script>
-
 <template>
   <div class="container">
     <nav>
@@ -82,6 +66,19 @@ defineProps({
 
 <script>
 export default {
+  props: {
+    data: {
+      type: Object,
+      required: true,
+    },
+    img: {
+      type: String,
+      required: true,
+    },
+    metric: {
+      type: String,
+    },
+  },
   data() {
     return {
       city: "medellin",
