@@ -13,7 +13,7 @@ https://weather-api-ivory.vercel.app/
 ## Technologies used
 
 1. Vue
-2. Javascript
+2. JavaScript
 3. CSS3
 
 ## Customize configuration
