@@ -28,7 +28,7 @@
     </h3>
     <div class="modal-search">
       <button class="close" @click="modalActive">X</button>
-      <div class="search-container">
+      <form class="search-container">
         <input
           type="text"
           name="query"
@@ -36,7 +36,7 @@
           class="search-bar"
           placeholder="search location"
           v-model="city"
-          @keypress="geolocationFetch(city)"
+          @input="geolocationFetch(city)"
         />
         <button
           @click="
@@ -46,7 +46,7 @@
         >
           Search
         </button>
-      </div>
+      </form>
       <div class="results-container" v-if="geo">
         <button
           class="result"
